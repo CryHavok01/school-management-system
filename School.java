@@ -26,11 +26,14 @@ public class School {
     return this.totalMoneySpent;
   }
 
-  public void setTotalMoneyEarned(int totalMoneyEarned) {
-    this.totalMoneyEarned = totalMoneyEarned;
+  public void updateTotalMoneyEarned(int moneyEarned) {
+    this.totalMoneyEarned += moneyEarned;
   }
-  public void setTotalMoneySpent(int totalMoneySpent) {
-    this.totalMoneySpent = totalMoneySpent;
+  public void updateTotalMoneySpent(int moneySpent) {
+    this.totalMoneySpent += moneySpent;
+  }
+  public int getCurrentFunds() {
+    return this.totalMoneyEarned - this.totalMoneySpent;
   }
 
   public void addTeacher(Teacher newTeacher) {
