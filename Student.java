@@ -28,7 +28,7 @@ public class Student {
   }
 
   public int getFeesPaid() {
-    return this.feesPaid
+    return this.feesPaid;
   }
 
   public int getFeesRemaining() {
