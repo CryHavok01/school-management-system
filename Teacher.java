@@ -24,4 +24,12 @@ public class Teacher {
   public void setSalary(int newSalary) {
     this.salary = newSalary;
   }
+
+  public void payRaise(int raiseAmt) {
+    this.salary += raiseAmt;
+  }
+
+  public static void main(String[] args) {
+    
+  }
 }
