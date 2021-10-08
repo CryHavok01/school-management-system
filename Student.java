@@ -13,6 +13,26 @@ public class Student {
     feesPaid = 0;
   }
 
+  public int getId() {
+    return this.id;
+  }
+
+  public String getName() {
+    return this.name;
+  }
+
+  public int getGrade() {
+    return this.grade;
+  }
+
+  public int getFeesPaid() {
+    return this.feesPaid;
+  }
+
+  public int getFeesRemaining() {
+    return this.feesTotal - this.feesPaid;
+  }
+
   public void setGrade(int newGrade) {
     this.grade = newGrade;
   }
