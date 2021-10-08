@@ -9,7 +9,16 @@ public class Student {
     this.id = id;
     this.name = name;
     this.grade = grade;
-    this.feesTotal = 30000;
+    feesTotal = 30000;
+    feesPaid = 0;
+  }
+
+  public void setGrade(int newGrade) {
+    this.grade = newGrade;
+  }
+
+  public void payFees(int payment) {
+    this.feesPaid += payment;
   }
 
   public static void main(String[] args) {
