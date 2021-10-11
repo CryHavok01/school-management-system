@@ -43,6 +43,16 @@ public class School {
     this.students.add(newStudent);
   }
 
+  public String payCycle() {
+    this.students.forEach(student -> {
+      updateTotalMoneyEarned(student.getFeesPaid());
+      student.updateFeesTotal();
+      student.resetFeesPaid();
+    });
+    this.teachers.forEach(teacher -> updateTotalMoneySpent(teacher.getSalary()));
+    return "Money Earned: " + getTotalMoneyEarned() + " Money Spent: " + getTotalMoneySpent() + " Current Funds: " + getCurrentFunds();
+  }
+
   public static void main(String[] args) {
     
   }
