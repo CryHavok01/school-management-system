@@ -53,6 +53,10 @@ public class Student {
     this.feesPaid += payment;
   }
 
+  public String toString() {
+    return "Student #1: " + this.name + " has paid " + this.feesPaid + " of their " + this.feesTotal + " total fees";
+  }
+
   public static void main(String[] args) {
     
   }

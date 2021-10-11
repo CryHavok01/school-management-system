@@ -30,5 +30,8 @@ public class Main {
     System.out.println(jay.getFeesPaid());
 
     steve.payFees(40000);
+
+    bob.payFees(4000);
+    System.out.println(bob);
   }
 }
