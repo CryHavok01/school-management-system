@@ -21,7 +21,14 @@ public class Main {
     studentsList.add(steve);
 
     School springfieldElementary = new School(teachersList, studentsList);
-    System.out.println(springfieldElementary.getTotalMoneyEarned());
 
+    jay.payFees(15000);
+    bob.payFees(5000);
+
+    System.out.println(jay.getFeesPaid());
+    System.out.println(springfieldElementary.payCycle());
+    System.out.println(jay.getFeesPaid());
+
+    steve.payFees(40000);
   }
 }

@@ -37,7 +37,19 @@ public class Student {
     this.grade = newGrade;
   }
 
+  public void resetFeesPaid() {
+    this.feesPaid = 0;
+  }
+
+  public void updateFeesTotal() {
+    this.feesTotal = this.getFeesRemaining();
+  }
+
   public void payFees(int payment) {
+    if (payment > this.feesTotal) {
+      this.feesPaid = this.feesTotal;
+      System.out.println("Fees fully paid.  Refund total: " + (payment - this.feesTotal));
+    }
     this.feesPaid += payment;
   }
 
